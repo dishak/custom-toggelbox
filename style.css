@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(156 9 52);
+    
+}
+
+.main
+{
+    display: inline-block;
+    border: 2px solid white;
+    background-color: white;
+    border-radius:40px;
+    margin: 30% 30%;
+    padding: 20px 10px 20px 10px;
+    
+}
+#title
+{
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 11px 78px 11px 25px;
+    color:#9c0934;
+    
+}
+#wifii,#blee,#hotspoot
+{
+    color: black;
+    font-weight:bolder;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
+    padding: 11px 78px 11px 25px;
+
+}
+
+input[type=checkbox]
+{
+    display: none;
+   
+}
+
+/* This to perform toggel behavior using native checbox and moifying it to toggel switch */
+
+.switch
+{
+    float: right;
+    margin-left: 85px;
+    position: relative;
+    background-color: rgba(0, 0, 0, .25);
+    height: 2rem;
+    width: 4rem;
+    border-radius: 2rem;
+}
+.switch::after
+{
+    content: "";
+    position: absolute;
+    background-color: aliceblue;
+    top: 0.1rem;
+    left: 0.1rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    border: 0.5px #ff0069cf solid;
+    transition: all .4s linear; 
+}
+
+input[type=checkbox]:checked + .switch::after
+{
+    
+    translate: 2.2rem 0;
+    
+}
+input[type=checkbox]:checked + .switch
+{
+    background-color: #9c0934;
+}
